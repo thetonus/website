@@ -1,0 +1,56 @@
+#################### default parameters ################################
+# favicon
+favicon = "images/favicon.png" # TODO - Look into changing favicon 
+# logo
+logo = "images/logo.png"  # TODO - Look into changing logo
+# use `x` with logo_width, example: "100x"
+logo_width = "150px"
+# logo text will only show when logo is missing.
+logo_text = "TH"
+# OpenGraph / Twitter Card metadata
+description = "A place to share my thoughts"
+author = "Tony Hammack"
+# TODO - Look into changing logo 
+image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
+# main sections
+mainSections = ["blog"]
+# contact form action
+contact_form_action = "#" # contact form works with https://formspree.io
+# copyright text
+copyright = "Designed & Developed by [GetHugoThemes](https://gethugothemes.com)"
+# custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
+custom_script= "" 
+
+# author
+[author_block]
+title= "Hello there!"
+image= "images/avatar.png"  # TODO -> Change to use a picture of me.
+content= """
+My name is Tony Hammack. I am a machine learning engineer. Basically, 
+I talk to computers all day and drink (too much) coffee.
+"""
+
+# Preloader
+[preloader]
+enable = true 
+preloader = "" # use jpg, png, svg or gif format.
+
+# cookies
+[cookies]
+enable = false
+expire_days = 2
+content = "This site uses cookies. By continuing to use this website, you agree to their use."
+button = "I Accept"
+
+############################# social site ########################
+[[social]]
+icon = "fab fa-linkedin-in"
+link = "https://www.linkedin.com/in/hammack-tony"
+
+[[social]]
+icon = "fab fa-github"
+link = "https://www.github.com/hammacktony"
+
+[[social]]
+icon = "fas fa-envelope"
+link = "mailto:hammack.tony@gmail.com"
