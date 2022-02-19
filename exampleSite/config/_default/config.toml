@@ -1,7 +1,7 @@
 ######################## default configuration ####################
-baseURL = "https://demo.gethugothemes.com/techfeed/examplesite/"
-title = "Techfeed"
-theme = "techfeed-hugo"
+baseURL = "https://tonyhammack.com"
+title = "Tony Hammack"
+theme = "website"
 # post pagination
 paginate = "2"
 # post excerpt
