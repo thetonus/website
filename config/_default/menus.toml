@@ -22,11 +22,6 @@ name = "category"
 url = "categories/"
 weight = 4 
 
-[[main]]
-name = "contact"
-url = "contact/"
-weight = 5
-
 # # dropdown menu
 # [[main]]
 # name = "Pages"

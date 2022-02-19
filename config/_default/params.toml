@@ -25,7 +25,10 @@ custom_script= ""
 [author_block]
 title= "WELCOME TO MY BLOG"
 image= "images/author.jpg"  # TODO -> Change to use a picture of me.
-content= "My name is Linda Smith. I am a writer, I like to travel and I love to photograph beautiful nature places and happy peoples."
+content= """
+My name is Tony Hammack. I am a machine learning engineer. Basically, 
+I talk to computers all day and drink (too much) coffee.
+"""
 
 # Preloader
 [preloader]
