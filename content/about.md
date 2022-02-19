@@ -1,6 +1,6 @@
 ---
 title: "Casual Tinkerer | Massive Nerd"
-image: "images/about.jpg"
+image: "images/user.png"
 description: "An obligatory about page..."
 layout: "about"
 draft: false

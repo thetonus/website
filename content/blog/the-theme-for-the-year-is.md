@@ -2,14 +2,10 @@
 date: "2019-01-05"
 title: "The Theme for the year is...."
 categories: ["personal", "hope"]
-image: "images/01.jpg"
+image: "images/boxing-gloves-wallpaper-1.png"
 featured: true
 draft: false
 ---
-
-
-<!-- TODO - Fix image -->
-![cover](/images/boxing-gloves-wallpaper-1.png "image")
 
 2018 was...let's just say it was hard. 
 

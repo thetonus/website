@@ -2,13 +2,10 @@
 date: "2018-02-08"
 title: "One Is Not Enough..."
 categories: ["personal", "history", "opinion"]
-image: "images/01.jpg"
+image: "images/120420110908-human-hero-black-power-norman-color-horizontal-large-gallery.png"
 featured: true
 draft: false
 ---
-
-<!-- TODO - Fix images -->
-![cover](/images/120420110908-human-hero-black-power-norman-color-horizontal-large-gallery.png "image")
 
 February. The month best known for leap years and love. 
 

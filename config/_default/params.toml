@@ -24,7 +24,7 @@ custom_script= ""
 # author
 [author_block]
 title= "Hello there!"
-image= "images/author.jpg"  # TODO -> Change to use a picture of me.
+image= "images/avatar.png"  # TODO -> Change to use a picture of me.
 content= """
 My name is Tony Hammack. I am a machine learning engineer. Basically, 
 I talk to computers all day and drink (too much) coffee.
@@ -32,7 +32,7 @@ I talk to computers all day and drink (too much) coffee.
 
 # Preloader
 [preloader]
-enable = false
+enable = true 
 preloader = "" # use jpg, png, svg or gif format.
 
 # cookies

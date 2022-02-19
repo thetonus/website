@@ -2,13 +2,10 @@
 date: "2017-12-14"
 title: "On Leaving Caves, Pushing Boulders, and Fighting Monsters"
 categories: ["personal", "perseverance"]
-image: "images/01.jpg"
+image: "images/platoscave.png"
 featured: true
 draft: false
 ---
-
-<!-- TODO - Fix image -->
-![cover](/images/platoscave.png "image")
 
 With all that has been going on recently, mainly prep for my Complex Analysis final (trust me, it is more scary than it sounds), I have not had to time to outline and plan the next installment of <em>Crisis</em>. Who knows when I will finish with that project. However, I still have a few ruminations I can share.
 
@@ -52,7 +49,7 @@ The changes I want to see made in my life are not external changes like working 
 
 I want to make progress in communication, in expressing myself, in being emotionally healthy, in reducing my social anxiety, in developing self-control and self-discipline, in increasing self-esteem, in being a noble and honorable man, and in being a man of character.
 
-I talk about these goals often, and my friends have told me how far off the mark I am from these goals. They politely (and often impolitely) share that I am a hypocrite for saying that I stive for these goals yet horrifically fail at often them.
+I talk about these goals often, and my friends have told me how far off the mark I am from these goals. They politely (and often impolitely) share that I am a hypocrite for saying that I strive for these goals yet horrifically fail at often them.
 
 I strive to be better each day. In those days when I am in a good mood, I take advantage and try to accomplish as much as I can because I know the day is coming where it takes all I can to get out of bed and eat something that entire day. I am not the man I want to be, and it is even harder being bipolar. But, I try to be better; that is all I can do.
 

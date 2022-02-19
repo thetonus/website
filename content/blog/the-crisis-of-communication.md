@@ -2,13 +2,10 @@
 date: "2017-12-07"
 title: "The Crisis of Communication"
 categories: ["personal", "opinion"]
-image: "images/01.jpg"
+image: "images/photo-1492720026177-f0bfb64d9541.png"
 featured: true
 draft: false
 ---
-
-<!-- TODO - Fix image -->
-![cover](/images/photo-1492720026177-f0bfb64d9541.png "image")
 
 The ‘art’ of communication has been something that has not evolved with 21st century man. Between the passive aggressiveness, cowardly anonymous commenting on platforms, and misleading clickbait articles that stir emotions for a third of a second, no wonder why men have forgotten to communicate. Instead of invoking the long-standing tradition in the United States to make our case known in eloquent soliloquy, the US has traded the speech for verbal assault.
 

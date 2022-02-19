@@ -2,13 +2,10 @@
 date: "2018-02-25"
 title: "The Revolution Will Not Be Televised"
 categories: ["personal", "perseverance"]
-image: "images/01.jpg"
+image: "images/revolution.png"
 featured: true
 draft: false
 ---
-
-<!-- TODO fix images -->
-![cover](/images/revolution.png "image")
 
 > You will not be able to stay home, brother	
 You will not be able to plug in, turn on and drop out	
