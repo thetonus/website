@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "#"
+baseURL = "/"
 title = "Tony Hammack"
 theme = "techfeed"
 # post pagination

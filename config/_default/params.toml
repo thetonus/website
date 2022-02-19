@@ -23,7 +23,7 @@ custom_script= ""
 
 # author
 [author_block]
-title= "WELCOME TO MY BLOG"
+title= "Hello there!"
 image= "images/author.jpg"  # TODO -> Change to use a picture of me.
 content= """
 My name is Tony Hammack. I am a machine learning engineer. Basically, 
