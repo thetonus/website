@@ -1,10 +1,9 @@
 .PHONY: build serve
 
-SRC := exampleSite
-PWD := $(shell pwd)
+PWD:=$(shell pwd)
 
 build:
-	cd $(SRC) && hugo --minify --gc --themesDir ../..
+	hugo --minify --gc
 
 serve:
-	cd $(SRC) && hugo server --themesDir ../..
+	hugo server 

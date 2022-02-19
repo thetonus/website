@@ -1,7 +1,7 @@
 ######################## default configuration ####################
 baseURL = "https://tonyhammack.com"
 title = "Tony Hammack"
-theme = "website"
+theme = "techfeed"
 # post pagination
 paginate = "2"
 # post excerpt
