@@ -16,17 +16,19 @@ mainSections = ["blog"]
 # contact form action
 contact_form_action = "#" # contact form works with https://formspree.io
 # copyright text
-copyright = 'This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).'
+copyright = 'This work is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).'
+notice = "_All opinions expressed are my own._"
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
 custom_script= "" 
 
 # author
 [author_block]
-title= "Hello there!"
+title= "Tony Hammack"
 image= "images/avatar.png"  # TODO -> Change to use a picture of me.
 content= """
-My name is Tony Hammack. I am a machine learning engineer. Basically, 
 I talk to computers all day and drink (too much) coffee.
+
+I mostly write about personal growth or nerdy math/tech related things.
 """
 
 # Preloader
@@ -36,8 +38,8 @@ preloader = "" # use jpg, png, svg or gif format.
 
 # cookies
 [cookies]
-enable = false
-expire_days = 2
+enable = true 
+expire_days = 1
 content = "This site uses cookies. By continuing to use this website, you agree to their use."
 button = "I Accept"
 
