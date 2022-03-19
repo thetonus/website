@@ -10,14 +10,13 @@ logo_text = "TH"
 # OpenGraph / Twitter Card metadata
 description = "A place to share my thoughts"
 author = "Tony Hammack"
-# TODO - Look into changing logo 
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 # main sections
 mainSections = ["blog"]
 # contact form action
 contact_form_action = "#" # contact form works with https://formspree.io
 # copyright text
-copyright = "Designed & Developed by [GetHugoThemes](https://gethugothemes.com)"
+copyright = 'This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).'
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
 custom_script= "" 
 

@@ -2,9 +2,7 @@
 baseURL = "/"
 title = "Tony Hammack"
 theme = "techfeed"
-# post pagination
 paginate = "2"
-# post excerpt
 summaryLength = "30"
 # google analytics
 googleAnalytics = "" # example: UA-123-45, for more info, read the article https://support.google.com/analytics/answer/1008080?hl=en
@@ -44,3 +42,4 @@ suffixes = [""]
 [outputFormats.WebAppManifest]
 mediaType = "application/manifest+json"
 rel = "manifest"
+
