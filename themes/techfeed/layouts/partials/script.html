@@ -9,49 +9,52 @@
 {{ end }}
 {{ $scripts := $scripts | append (resources.Get "js/script.js" | minify) }}
 {{ $scripts := $scripts | resources.Concat "/js/script.js" | minify | fingerprint "sha512" }}
-<script crossorigin="anonymous" defer="defer" integrity="{{ $scripts.Data.Integrity }}" type="application/javascript">{{$scripts.Content | safeJS}}</script>
+<script crossorigin="anonymous" defer="defer" integrity="{{ $scripts.Data.Integrity }}"
+  type="application/javascript">{{ $scripts.Content | safeJS }}</script>
 
 <!-- cookie -->
 {{ with site.Params.cookies }}
 {{ if .enable }}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"
+  integrity="sha512-wT7uPE7tOP6w4o28u1DN775jYjHQApdBnib5Pho4RB0Pgd9y7eSkAV1BTqQydupYDB9GBhTcQQzyNMPMV3cAew=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <div id="js-cookie-box" class="cookie-box cookie-box-hide">
-	{{.content | markdownify}}<span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">{{.button}}</span>
+  {{.content | markdownify}}<span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">{{.button}}</span>
 </div>
 <script type="application/javascript">
-	(function ($) {
-		const cookieBox = document.getElementById('js-cookie-box');
-		const cookieButton = document.getElementById('js-cookie-button');
-		if (!Cookies.get('cookie-box')) {
-			cookieBox.classList.remove('cookie-box-hide');
-			cookieButton.onclick = function () {
-				Cookies.set('cookie-box', true, {
-					expires: {{ .expire_days }}
-				});
-				cookieBox.classList.add('cookie-box-hide');
-			};
+  (function ($) {
+    const cookieBox = document.getElementById('js-cookie-box');
+    const cookieButton = document.getElementById('js-cookie-button');
+    if (!Cookies.get('cookie-box')) {
+      cookieBox.classList.remove('cookie-box-hide');
+      cookieButton.onclick = function () {
+        Cookies.set('cookie-box', true, {
+          expires: {{ .expire_days}}
+    });
+    cookieBox.classList.add('cookie-box-hide');
+  };
 		}
-	})(jQuery);
+	}) (jQuery);
 </script>
 
 <!-- cookie style -->
 <style>
-.cookie-box {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  z-index: 9999;
-  padding: 1rem 2rem;
-  background: rgb(71, 71, 71);
-  transition: all .75s cubic-bezier(.19, 1, .22, 1);
-  color: #fdfdfd;
-}
+  .cookie-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 9999;
+    padding: 1rem 2rem;
+    background: rgb(71, 71, 71);
+    transition: all .75s cubic-bezier(.19, 1, .22, 1);
+    color: #fdfdfd;
+  }
 
-.cookie-box-hide {
-  display: none;
-}
+  .cookie-box-hide {
+    display: none;
+  }
 </style>
 {{ end }}
 {{ end }}
@@ -64,8 +67,8 @@
   WebFont.load({
     google: {
       api: 'https://fonts.googleapis.com/css2',
-      families: ['{{$pf | default `Lora:ital@0;1`}}{{if not $sf}}&display=swap{{end}}'{{with $sf}},'{{. | default `Oswald`}}&display=swap'{{end}}],
-      version: 2
+      families: ['{{$pf | default `Lora:ital@0;1`}}{{if not $sf}}&display=swap{{end}}'{{with $sf}}, '{{. | default `Oswald`}}&display=swap'{{end}}],
+    version: 2
     },
     active: () => {
       sessionStorage.fontsLoaded = true
