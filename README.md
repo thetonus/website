@@ -16,9 +16,7 @@ Usage:
 
 The commands are:
 
-	build                         Build frontend and compile assests
 	help                          Help command
-	serve                         Start development server
 ```
 ## License
 
@@ -29,12 +27,4 @@ Released under the [CC BY-NC-SA 4.0](./LICENSE) license.
 This website is deployed on [Cloudflare Pages](https://pages.cloudflare.com/).
 
 ## Projects Used
-- [Hugo](https://gohugo.io/)
-- [GetHugoThemes](https://gethugothemes.com) 
-- [Bootstrap](https://getbootstrap.com)
-- [Jquery](https://jquery.com)
-- [Web Font Loader](https://github.com/typekit/webfontloader)
-- [Font Awesome Icons](https://fontawesome.com)
-- [Google Fonts](http://fonts.google.com/)
-- [All Contributors](https://github.com/gethugothemes/techfeed-hugo/graphs/contributors)
-
+<!-- TODO -->
