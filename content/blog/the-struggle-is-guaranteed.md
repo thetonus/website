@@ -1,7 +1,7 @@
 ---
 publishDate: "2018-10-25"
 title: "The Struggle is Guaranteed"
-image: "posts/1QBNozapo8JiuXeLhqQsHtg.png"
+image: "posts/1QBNozapo8JiuXeLhqQsHtg.webp"
 categories: ["tech", "perseverance"]
 ---
 

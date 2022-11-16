@@ -2,7 +2,7 @@
 publishDate: "2018-02-25"
 title: "The Revolution Will Not Be Televised"
 categories: ["personal", "perseverance"]
-image: "posts/revolution.png"
+image: "posts/revolution.webp"
 ---
 
 > You will not be able to stay home, brother	

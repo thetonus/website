@@ -2,7 +2,7 @@
 publishDate: "2018-05-27"
 title: "To Those in the Arena..."
 categories: ["personal", "perseverance", "grit"]
-image: "posts/gladiator.png"
+image: "posts/gladiator.webp"
 ---
 
 I have been asked a lot recently about whether I am or am not excited for having graduated with my Master's. I have to say that it has not been that exciting or enlightening. It has been a trying time. One where each day is a fight.

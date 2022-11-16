@@ -2,7 +2,7 @@
 publishDate: "2019-01-05"
 title: "The Theme for the year is...."
 categories: ["personal", "hope"]
-image: "posts/boxing-gloves-wallpaper-1.png"
+image: "posts/boxing-gloves-wallpaper-1.webp"
 ---
 
 2018 was...let's just say it was hard. 

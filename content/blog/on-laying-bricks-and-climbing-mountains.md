@@ -2,7 +2,7 @@
 publishDate: "2018-01-04"
 title: "On Laying Bricks and Climbing Mountains"
 categories: ["personal", "perseverance"]
-image: "posts/image-2018-01-04.png"
+image: "posts/image-2018-01-04.webp"
 ---
 
 Many people have started their New Year's resolutions. Good for them! I hate to be the bearer of bad news, but unfortunately, the statistics are not on their side. According to <a href="https://www.forbes.com/sites/dandiamond/2013/01/01/just-8-of-people-achieve-their-new-years-resolutions-heres-how-they-did-it/#3d4355d9596b">Forbes</a>, only 8% of people will stick with and achieve their resolutions and goals. That is a small number.

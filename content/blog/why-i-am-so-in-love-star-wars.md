@@ -2,7 +2,7 @@
 publishDate: "2017-12-19"
 title: "Why I am so in love Star Wars....."
 categories: ["personal", "geek", "star-wars"]
-image: "posts/star-wars-original-trilogy-1997-alamo.png"
+image: "posts/star-wars-original-trilogy-1997-alamo.webp"
 ---
 
 With the release of Star Wars Episode 8: The Last Jedi, I thought it would be appropriate to share why I love Star Wars so much and why I am so passionate about it.
