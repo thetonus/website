@@ -6,9 +6,9 @@ _All opinions are my own._
 
 ## Development
 
-Run `make` to view CLI commands.
+Run `make` or `make help` to see make commands.
 
-```text
+```sh
 Let's build a website!
 
 Usage:
@@ -16,11 +16,17 @@ Usage:
 
 The commands are:
 
-	help                          Help command
+	build                          Build project
+	dev                            Run dev server
+	help                           Help command
+	install                        Install dependencies
 ```
+
 ## License
 
-Released under the [CC BY-NC-SA 4.0](./LICENSE) license.
+Content is released under the [CC BY-NC-SA 4.0](./LICENSE.content) license.
+
+The source code is released under the [MIT](./LICENSE) license.
 
 ## Deployment
 
