@@ -22,7 +22,6 @@ The commands are:
 	dev                           Run dev server
 	help                          Help command
 	install                       Install dependencies
-
 ```
 
 ## License
