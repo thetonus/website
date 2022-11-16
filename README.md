@@ -16,10 +16,12 @@ Usage:
 
 The commands are:
 
-	build                          Build project
-	dev                            Run dev server
-	help                           Help command
-	install                        Install dependencies
+	build                         Build project
+	ci/build                      CI Build
+	ci/install                    CI Install
+	dev                           Run dev server
+	help                          Help command
+	install                       Install dependencies
 ```
 
 ## License
@@ -32,5 +34,10 @@ The source code is released under the [MIT](./LICENSE) license.
 
 This website is deployed on [Cloudflare Pages](https://pages.cloudflare.com/).
 
+## Illustrations
+
+Illustrations are provided by [Icons 8](https://icons8.com/illustrations/author/zD2oqC8lLBBA) on [Ouch!](https://icons8.com/illustrations).
+
 ## Projects Used
-<!-- TODO -->
+
+* [Astro.js](https://astro.build/)

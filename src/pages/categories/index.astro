@@ -1,0 +1,36 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import getPostData from "../../utils/getPostData";
+
+const title = "Categories";
+const description = "Categories";
+const permalink = `${Astro.site.href}categories/`;
+const allPosts = await Astro.glob("../../../content/blog/*.md");
+const categories = [
+  // Get categories per from every post. Remove duplicates
+  ...new Set([...allPosts.map((x) => x.frontmatter.categories)].flat()),
+];
+---
+
+<BaseLayout title={title} description={description} permalink={permalink}>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 content-evenly">
+    {
+      categories.map((category) => {
+        return (
+          <div class="text-center">
+            <a href={"/categories/" + category}>
+              <h2>{category.toUpperCase()}</h2>
+            </a>
+          </div>
+        );
+      })
+    }
+  </div>
+</BaseLayout>
+
+<style>
+  h2 {
+    font-family: var(--font-family-sans);
+    font-weight: 700;
+  }
+</style>

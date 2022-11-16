@@ -1,10 +1,8 @@
 ---
-date: "2017-12-14"
+publishDate: "2017-12-14"
 title: "On Leaving Caves, Pushing Boulders, and Fighting Monsters"
 categories: ["personal", "perseverance"]
-image: "images/platoscave.png"
-featured: true
-draft: false
+image: "posts/platoscave.png"
 ---
 
 With all that has been going on recently, mainly prep for my Complex Analysis final (trust me, it is more scary than it sounds), I have not had to time to outline and plan the next installment of <em>Crisis</em>. Who knows when I will finish with that project. However, I still have a few ruminations I can share.
