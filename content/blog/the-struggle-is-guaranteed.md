@@ -1,10 +1,8 @@
 ---
-date: 2018-10-25
+publishDate: "2018-10-25"
 title: "The Struggle is Guaranteed"
-image: "images/1QBNozapo8JiuXeLhqQsHtg.png"
+image: "posts/1QBNozapo8JiuXeLhqQsHtg.png"
 categories: ["tech", "perseverance"]
-featured: true
-draft: false
 ---
 
 Last Thursday, I was rejected from Shipt...again. 

@@ -1,0 +1,75 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Bio from "../../components/Bio.astro";
+import getPostData from "../../utils/getPostData";
+
+export async function getStaticPaths() {
+  const posts = await Astro.glob("../../../content/blog/*.md");
+
+  return posts.map((p) => ({
+    params: { slug: p.file.split("/").pop()!.split(".").shift() },
+    props: { post: p },
+  }));
+}
+
+const { Content, frontmatter } = Astro.props.post;
+const { title, description, publishDate, image, categories } = frontmatter;
+const { slug, readingTime } = getPostData(Astro.props.post);
+const permalink = `${Astro.site.href}${slug}`;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  permalink={permalink}
+  current="blog"
+>
+  <header>
+    <p>{publishDate}</p>
+    <h1>{title}</h1>
+    <p>{readingTime}</p>
+    <hr />
+  </header>
+  <div class="container">
+    <article class="content">
+      <img src={"/assets/" + image} alt="Feature image" />
+      <Content />
+    </article>
+    <div class="px-6 pt-4 pb-2">
+      {
+        categories &&
+          categories.map((c: string) => {
+            return (
+              <a href={"/categories/" + c}><span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #{c}
+              </span></a>
+            );
+          })
+      }
+    </div>
+    <hr />
+    <Bio />
+  </div>
+</BaseLayout>
+
+<style>
+  header {
+    text-align: center;
+  }
+
+  header h1 {
+    margin-bottom: 0.7em;
+  }
+
+  header p {
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    font-family: var(--font-family-sans);
+    font-weight: 600;
+  }
+
+  header hr {
+    min-width: 100px;
+    width: 30%;
+  }
+</style>

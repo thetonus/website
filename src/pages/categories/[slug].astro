@@ -1,0 +1,98 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import getPostData from "../../utils/getPostData";
+
+const title = "Category";
+const description = "Latest articles in category.";
+const permalink = `${Astro.site.href}categories`;
+
+export async function getStaticPaths() {
+  const posts = await Astro.glob("../../../content/blog/*.md");
+  const categories = [
+    // Get categories per from every post. Remove duplicates
+    ...new Set([...posts.map((x) => x.frontmatter.categories)].flat()),
+  ];
+
+  // Custom "groupBy" to group posts by categories
+  const items = posts.reduce((r, p) => {
+    const foundIndexes = categories
+      .map((cat: string) => p.frontmatter.categories.indexOf(cat))
+      .filter((x: number) => x > -1);
+
+    foundIndexes
+      .map((i: number) => {
+        return p.frontmatter.categories[i];
+      })
+      .map((x: string) => {
+        if (!r.hasOwnProperty(x)) {
+          r[x] = [];
+        }
+        r[x].push(p);
+      });
+
+    return r;
+  }, {});
+
+  const data = [];
+  Object.entries(items).forEach(([key, value]) => {
+    data.push({
+      params: { slug: key },
+      props: { posts: value },
+    });
+  });
+  return data;
+}
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  permalink={permalink}
+  current="category"
+>
+  <div class="container">
+    <h1>Category: {Astro.params.slug.toUpperCase()}</h1>
+    {
+      Astro.props.posts.map((post, index) => {
+        const { slug, readingTime } = getPostData(post);
+        const href = `/posts/${slug}`;
+
+        return (
+          <div>
+            {index !== 0 && <hr />}
+            <div class="post-item">
+              <h2>
+                <a href={href}>{post.frontmatter.title}</a>
+              </h2>
+              <p>{post.frontmatter.description}</p>
+              <div class="post-item-footer">
+                <span class="post-item-date">
+                  — {post.frontmatter.publishDate} ({readingTime})
+                </span>
+              </div>
+            </div>
+          </div>
+        );
+      })
+    }
+  </div>
+</BaseLayout>
+
+<style>
+  h2,
+  .post-item-footer {
+    font-family: var(--font-family-sans);
+    font-weight: 700;
+  }
+
+  .post-item-date {
+    color: var(--text-secondary);
+    text-align: left;
+    text-transform: uppercase;
+    margin-right: 16px;
+  }
+
+  hr {
+    margin: 60px auto;
+  }
+</style>

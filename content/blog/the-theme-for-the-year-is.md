@@ -1,10 +1,8 @@
 ---
-date: "2019-01-05"
+publishDate: "2019-01-05"
 title: "The Theme for the year is...."
 categories: ["personal", "hope"]
-image: "images/boxing-gloves-wallpaper-1.png"
-featured: true
-draft: false
+image: "posts/boxing-gloves-wallpaper-1.png"
 ---
 
 2018 was...let's just say it was hard. 

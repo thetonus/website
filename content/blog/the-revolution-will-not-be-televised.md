@@ -1,10 +1,8 @@
 ---
-date: "2018-02-25"
+publishDate: "2018-02-25"
 title: "The Revolution Will Not Be Televised"
 categories: ["personal", "perseverance"]
-image: "images/revolution.png"
-featured: true
-draft: false
+image: "posts/revolution.png"
 ---
 
 > You will not be able to stay home, brother	

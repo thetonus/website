@@ -32,5 +32,10 @@ The source code is released under the [MIT](./LICENSE) license.
 
 This website is deployed on [Cloudflare Pages](https://pages.cloudflare.com/).
 
+## Illustrations
+
+Illustrations are provided by [Icons 8](https://icons8.com/illustrations/author/zD2oqC8lLBBA) on [Ouch!](https://icons8.com/illustrations).
+
 ## Projects Used
-<!-- TODO -->
+
+* [Astro.js](https://astro.build/)
