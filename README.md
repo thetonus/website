@@ -26,7 +26,7 @@ The commands are:
 
 ## License
 
-Content is released under the [CC BY-NC-SA 4.0](./LICENSE.content) license.
+Content is released under the [CC BY-NC-SA 4.0](./content/LICENSE) license.
 
 The source code is released under the [MIT](./LICENSE) license.
 
