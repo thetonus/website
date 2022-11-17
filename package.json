@@ -22,6 +22,7 @@
     "vite": "^3.2.4"
   },
   "dependencies": {
+    "@astrojs/rss": "^1.0.3",
     "reading-time": "^1.5.0"
   }
 }
