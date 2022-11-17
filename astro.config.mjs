@@ -5,7 +5,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://tonyhammack.com',
+  site: 'https://theoraclenetwork.com',
   integrations: [tailwind(), mdx(), svelte()],
   markdown: {
     shikiConfig: {
