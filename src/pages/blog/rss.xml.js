@@ -21,7 +21,7 @@ export const get = () =>
       return {
         link: `posts/${slug}`, // rss module injects the SITE, only needs to work on the path
         title: post.frontmatter.title,
-        publishDate: post.frontmatter.publishDate,
+        pubDate: post.frontmatter.publishDate,
       };
     }),
     customData: `<language>en-us</language>`,
