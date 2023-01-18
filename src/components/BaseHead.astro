@@ -6,16 +6,19 @@ export interface Props {
   title: string;
   description: string;
   permalink: string;
+  imagelink: string;
 }
 
-const { title, description, permalink } = Astro.props;
-const socialUrl = Astro.site.href + 'assets/social.webp'
+const { title, description, permalink, imagelink } = Astro.props;
 ---
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
 
 <!-- Primary Meta Tags -->
@@ -28,14 +31,7 @@ const socialUrl = Astro.site.href + 'assets/social.webp'
 <meta property="og:url" content={permalink} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={socialUrl} />
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={permalink} />
-<meta property="twitter:title" content={title} />
-<meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={socialUrl} />
+<meta property="og:image" content={imagelink} />
 
 <!-- This is intentionally inlined to avoid FOUC -->
 <script>
