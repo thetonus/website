@@ -31,7 +31,7 @@ const { title, description, permalink, imagelink } = Astro.props;
 <meta property="og:url" content={permalink} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={imagelink} />
+<meta property="og:image" content={imagelink || `${Astro.site.href}assets/user.webp`} />
 
 <!-- This is intentionally inlined to avoid FOUC -->
 <script>
