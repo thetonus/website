@@ -16,12 +16,14 @@ const { Content, frontmatter } = Astro.props.post;
 const { title, description, publishDate, image, categories } = frontmatter;
 const { slug, readingTime } = getPostData(Astro.props.post);
 const permalink = `${Astro.site.href}${slug}`;
+const imagelink = `${Astro.site.href}assets/${image}`;
 ---
 
 <BaseLayout
   title={title}
-  description={description}
+  description={description || title}
   permalink={permalink}
+  imagelink={imagelink}
   current="blog"
 >
   <header>
