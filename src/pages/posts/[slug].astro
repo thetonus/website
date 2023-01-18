@@ -17,14 +17,10 @@ const { title, description, publishDate, image, categories } = frontmatter;
 const { slug, readingTime } = getPostData(Astro.props.post);
 const permalink = `${Astro.site.href}${slug}`;
 const imagelink = `${Astro.site.href}assets/${image}`;
-
-// Backup for if a description was not set.
-//  100 characters == 4 sentences == 1 paragraph
-const firstParagraph = Astro.props.post.rawContent().substr(0, 100) + "...";  
 ---
 <BaseLayout
   title={title}
-  description={description || firstParagraph}
+  description={description || title}
   permalink={permalink}
   imagelink={imagelink}
   current="blog"
