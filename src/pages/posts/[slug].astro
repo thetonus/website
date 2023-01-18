@@ -18,7 +18,6 @@ const { slug, readingTime } = getPostData(Astro.props.post);
 const permalink = `${Astro.site.href}${slug}`;
 const imagelink = `${Astro.site.href}assets/${image}`;
 ---
-
 <BaseLayout
   title={title}
   description={description || title}
