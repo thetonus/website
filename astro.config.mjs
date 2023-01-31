@@ -5,17 +5,12 @@ import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
-
-// https://astro.build/config
 export default defineConfig({
   site: "https://theoraclenetwork.com",
-  integrations: [tailwind(), mdx(), svelte(), sitemap()],
+  integrations: [mdx(), tailwind(), svelte(), sitemap()],
   markdown: {
     shikiConfig: {
-      theme: "nord"
+      theme: "nord",
     },
-    rehypePlugins: [["rehype-external-links", {
-      target: "_blank"
-    }]]
-  }
+  },
 });
