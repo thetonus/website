@@ -11,8 +11,9 @@
   },
   "devDependencies": {
     "@astrojs/mdx": "^0.15.1",
-    "@astrojs/svelte": "^1.0.0",
-    "@astrojs/tailwind": "^2.1.2",
+    "@astrojs/svelte": "^2.0.0",
+    "@astrojs/tailwind": "^3.0.0",
+    "postcss": "^8.4.14",
     "astro": "^2.0.2",
     "rehype-external-links": "^2.0.0",
     "rollup": "^3.3.0",
