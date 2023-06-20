@@ -28,8 +28,8 @@ devDependencies:
     specifier: ^8.4.24
     version: 8.4.24
   rehype-external-links:
-    specifier: ^2.0.0
-    version: 2.0.1
+    specifier: ^2.1.0
+    version: 2.1.0
   rollup:
     specifier: ^3.25.1
     version: 3.25.1
@@ -1995,6 +1995,13 @@ packages:
       web-namespaces: 2.0.1
     dev: true
 
+  /hast-util-is-element@2.1.3:
+    resolution: {integrity: sha512-O1bKah6mhgEq2WtVMk+Ta5K7pPMqsBBlmzysLdcwKVrqzZQ0CHqUPiIVspNhAG1rvxpvJjtGee17XfauZYKqVA==}
+    dependencies:
+      '@types/hast': 2.3.4
+      '@types/unist': 2.0.6
+    dev: true
+
   /hast-util-parse-selector@3.1.0:
     resolution: {integrity: sha512-AyjlI2pTAZEOeu7GeBPZhROx0RHBnydkQIXlhnFzDi0qfXTmGUWoCYZtomHbrdrheV4VFUlPcfJ6LMF5T6sQzg==}
     dependencies:
@@ -3302,11 +3309,12 @@ packages:
     resolution: {integrity: sha512-onYyVhBNr4CmAxFsKS7bz+uTLRakypIe4R+5A824vBSkQy/hB3fZepoVEf8OVAxzLvK+H/jm9TzpI3ETSm64Kg==}
     dev: false
 
-  /rehype-external-links@2.0.1:
-    resolution: {integrity: sha512-u2dNypma+ps12SJWlS23zvbqwNx0Hl24t0YHXSM/6FCZj/pqWETCO3WyyrvALv4JYvRtuPjhiv2Lpen15ESqbA==}
+  /rehype-external-links@2.1.0:
+    resolution: {integrity: sha512-2YMJZVM1hxZnwl9IPkbN5Pjn78kXkAX7lq9VEtlaGA29qIls25vZN+ucNIJdbQUe+9NNFck17BiOhGmsD6oLIg==}
     dependencies:
       '@types/hast': 2.3.4
       extend: 3.0.2
+      hast-util-is-element: 2.1.3
       is-absolute-url: 4.0.1
       space-separated-tokens: 2.0.2
       unified: 10.1.2
