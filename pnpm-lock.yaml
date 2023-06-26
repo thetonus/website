@@ -31,8 +31,8 @@ devDependencies:
     specifier: ^2.1.0
     version: 2.1.0
   rollup:
-    specifier: ^3.25.1
-    version: 3.25.1
+    specifier: ^3.25.2
+    version: 3.25.2
   svelte:
     specifier: ^3.59.2
     version: 3.59.2
@@ -3475,8 +3475,8 @@ packages:
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
     dev: true
 
-  /rollup@3.25.1:
-    resolution: {integrity: sha512-tywOR+rwIt5m2ZAWSe5AIJcTat8vGlnPFAv15ycCrw33t6iFsXZ6mzHVFh2psSjxQPmI+xgzMZZizUAukBI4aQ==}
+  /rollup@3.25.2:
+    resolution: {integrity: sha512-VLnkxZMDr3jpxgtmS8pQZ0UvhslmF4ADq/9w4erkctbgjCqLW9oa89fJuXEs4ZmgyoF7Dm8rMDKSS5b5u2hHUg==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
@@ -4017,7 +4017,7 @@ packages:
       esbuild: 0.16.17
       postcss: 8.4.24
       resolve: 1.22.1
-      rollup: 3.25.1
+      rollup: 3.25.2
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -4049,7 +4049,7 @@ packages:
     dependencies:
       esbuild: 0.17.19
       postcss: 8.4.24
-      rollup: 3.25.1
+      rollup: 3.25.2
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
