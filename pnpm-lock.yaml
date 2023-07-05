@@ -21,7 +21,7 @@ devDependencies:
     version: 0.19.7(astro@2.7.1)
   '@astrojs/svelte':
     specifier: ^3.0.0
-    version: 3.0.0(astro@2.7.1)(svelte@3.59.2)(typescript@5.1.3)(vite@4.3.9)
+    version: 3.0.0(astro@2.7.1)(svelte@3.59.2)(typescript@5.1.6)(vite@4.3.9)
   '@astrojs/tailwind':
     specifier: ^4.0.0
     version: 4.0.0(astro@2.7.1)(tailwindcss@3.3.2)
@@ -44,8 +44,8 @@ devDependencies:
     specifier: ^3.3.2
     version: 3.3.2
   typescript:
-    specifier: ^5.0.2
-    version: 5.1.3
+    specifier: ^5.1.6
+    version: 5.1.6
   vite:
     specifier: ^4.3.9
     version: 4.3.9
@@ -162,7 +162,7 @@ packages:
       zod: 3.21.4
     dev: false
 
-  /@astrojs/svelte@3.0.0(astro@2.7.1)(svelte@3.59.2)(typescript@5.1.3)(vite@4.3.9):
+  /@astrojs/svelte@3.0.0(astro@2.7.1)(svelte@3.59.2)(typescript@5.1.6)(vite@4.3.9):
     resolution: {integrity: sha512-LIrcZGybBHtiY84Sjls4q63oQu04k1cCfsXO8OzjOdzz7jOy6wyGamhZWpg8Cu5m5hiL0hrm4wzgAaI7Kxh1NA==}
     engines: {node: '>=16.12.0'}
     peerDependencies:
@@ -172,7 +172,7 @@ packages:
       '@sveltejs/vite-plugin-svelte': 2.4.1(svelte@3.59.2)(vite@4.3.9)
       astro: 2.7.1
       svelte: 3.59.2
-      svelte2tsx: 0.6.15(svelte@3.59.2)(typescript@5.1.3)
+      svelte2tsx: 0.6.15(svelte@3.59.2)(typescript@5.1.6)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -1069,7 +1069,7 @@ packages:
       string-width: 5.1.2
       strip-ansi: 7.1.0
       tsconfig-resolver: 3.0.1
-      typescript: 5.1.3
+      typescript: 5.1.6
       unist-util-visit: 4.1.2
       vfile: 5.3.7
       vite: 4.3.9
@@ -3513,7 +3513,7 @@ packages:
       svelte: 3.59.2
     dev: true
 
-  /svelte2tsx@0.6.15(svelte@3.59.2)(typescript@5.1.3):
+  /svelte2tsx@0.6.15(svelte@3.59.2)(typescript@5.1.6):
     resolution: {integrity: sha512-+j6RmA3g5pPs1DHa/rdzJjjhZuCfWx0IbNPaR99A2bvOSPPY6BlVkBGU0urI+DGcWHhYEG28Flo942KqlAkpEQ==}
     peerDependencies:
       svelte: ^3.55 || ^4.0
@@ -3522,7 +3522,7 @@ packages:
       dedent-js: 1.0.1
       pascal-case: 3.1.2
       svelte: 3.59.2
-      typescript: 5.1.3
+      typescript: 5.1.6
     dev: true
 
   /svelte@3.59.2:
@@ -3639,8 +3639,8 @@ packages:
     engines: {node: '>=12.20'}
     dev: true
 
-  /typescript@5.1.3:
-    resolution: {integrity: sha512-XH627E9vkeqhlZFQuL+UsyAXEnibT0kWR2FWONlr4sTjvxyJYnyefgrkyECLzM5NenmKzRAy2rR/OlYLA1HkZw==}
+  /typescript@5.1.6:
+    resolution: {integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
