@@ -32,14 +32,13 @@ Instead of trying to get another machine and run the same code or build from scr
 Instead of executing the following in my terminal
 
 ```bash
-docker build -t <my container image>:<tag> .
-
+docker build -t '<my container image>:<tag>' .
 ```
 
 I ran
 
 ```bash
-docker build --platform linux/amd64 -t <my container image>:<tag> .
+docker build --platform linux/amd64 -t '<my container image>:<tag>' .
 ```
 
 The most important part is the second half of the `--platform` flag: `amd64` is just another name for `x86_64`.
