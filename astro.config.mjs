@@ -10,7 +10,7 @@ export default defineConfig({
   integrations: [mdx(), tailwind(), svelte(), sitemap()],
   markdown: {
     shikiConfig: {
-      theme: "nord",
+      theme: "dark-plus",
     },
   },
 });
