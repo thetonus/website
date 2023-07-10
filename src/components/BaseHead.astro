@@ -1,12 +1,12 @@
 ---
-import '../styles/fonts.css'
-import '../styles/global.css'
+import "../styles/fonts.css";
+import "../styles/global.css";
 
 export interface Props {
   title: string;
   description: string;
   permalink: string;
-  imagelink: string;
+  imagelink?: string;
 }
 
 const { title, description, permalink, imagelink } = Astro.props;
@@ -15,11 +15,10 @@ const { title, description, permalink, imagelink } = Astro.props;
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
@@ -31,15 +30,21 @@ const { title, description, permalink, imagelink } = Astro.props;
 <meta property="og:url" content={permalink} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={imagelink || `${Astro.site.href}assets/user.webp`} />
+<meta
+  property="og:image"
+  content={imagelink || `${Astro.site!!.href}assets/user.webp`}
+/>
 
 <!-- This is intentionally inlined to avoid FOUC -->
 <script>
   const root = document.documentElement;
-  const theme = localStorage.getItem('theme');
-  if (theme === 'dark' || (!theme) && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    root.classList.add('theme-dark');
+  const theme = localStorage.getItem("theme");
+  if (
+    theme === "dark" ||
+    (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    root.classList.add("theme-dark");
   } else {
-    root.classList.remove('theme-dark');
+    root.classList.remove("theme-dark");
   }
 </script>
