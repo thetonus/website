@@ -14,7 +14,7 @@
     "@astrojs/svelte": "^3.1.0",
     "@astrojs/tailwind": "^4.0.0",
     "postcss": "^8.4.27",
-    "astro": "^2.8.3",
+    "astro": "^2.9.6",
     "rehype-external-links": "^2.1.0",
     "rollup": "^3.26.3",
     "svelte": "^4.1.1",
