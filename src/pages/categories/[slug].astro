@@ -4,7 +4,7 @@ import getPostData from "../../utils/getPostData";
 
 const title = "Category";
 const description = "Latest articles in category.";
-const permalink = `${Astro.site.href}categories`;
+const permalink = `${Astro.site!.href}categories`;
 
 export async function getStaticPaths() {
   const posts = await Astro.glob("../../../content/blog/*.md");

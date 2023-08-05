@@ -13,7 +13,12 @@
     theme = "dark";
   }
 
+  /**
+   * Handles the change of the theme
+   * @param {HTMLInputElement} event - Input event
+   */
   function handleChange(event) {
+    event.preventDefault();
     theme = event.target.value;
     localStorage.setItem("theme", theme);
   }

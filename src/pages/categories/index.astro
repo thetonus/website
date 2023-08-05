@@ -4,7 +4,7 @@ import getPostData from "../../utils/getPostData";
 
 const title = "Categories";
 const description = "Categories";
-const permalink = `${Astro.site.href}categories/`;
+const permalink = `${Astro.site!.href}categories/`;
 const allPosts = await Astro.glob("../../../content/blog/*.md");
 const categories = [
   // Get categories per from every post. Remove duplicates

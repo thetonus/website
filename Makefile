@@ -1,4 +1,5 @@
 .DEFAULT_GOAL := help
+SHELL := bash -eou pipefail
 
 # Other options are yarn or normal npm
 NPM := pnpm
