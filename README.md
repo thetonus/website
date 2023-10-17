@@ -17,8 +17,6 @@ Usage:
 The commands are:
 
 	build                         Build project
-	ci/build                      CI Build
-	ci/install                    CI Install
 	dev                           Run dev server
 	help                          Help command
 	install                       Install dependencies
