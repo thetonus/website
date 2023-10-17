@@ -2,7 +2,7 @@
 SHELL := bash -eou pipefail
 
 # Other options are yarn or normal npm
-NPM := pnpm
+NPM := bun
 
 # https://www.freecodecamp.org/news/self-documenting-makefile/
 .PHONY: help

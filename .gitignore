@@ -24,3 +24,4 @@ packages/integrations/**/.netlify/
 
 # exclude IntelliJ/WebStorm stuff
 .idea
+.spr.yml
