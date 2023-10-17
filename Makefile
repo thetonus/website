@@ -1,8 +1,7 @@
 .DEFAULT_GOAL := help
-SHELL := bash -eou pipefail
 
 # Other options are yarn or normal npm
-NPM := bun
+COMMAND := bun
 
 # https://www.freecodecamp.org/news/self-documenting-makefile/
 .PHONY: help
@@ -13,16 +12,11 @@ help: ## Help command
 	@egrep -h '\s##\s' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\t\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
 install: ## Install dependencies
-	$(NPM) install
+	$(COMMAND) install
 
 build: install ## Build project
-	$(NPM) run build
+	$(COMMAND) run build
 
 dev: install  ## Run dev server
-	$(NPM) run dev
+	$(COMMAND) run dev
 
-ci/install: ## CI Install
-	npm install -g $(NPM)
-	@make install
-
-ci/build: ci/install build ## CI Build
