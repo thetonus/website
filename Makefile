@@ -11,12 +11,15 @@ help: ## Help command
 	@echo "The commands are:\n"
 	@egrep -h '\s##\s' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\t\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
+install: export ASTRO_TELEMETRY_DISABLED=1
 install: ## Install dependencies
 	$(COMMAND) install
 
+build: export ASTRO_TELEMETRY_DISABLED=1
 build: install ## Build project
 	$(COMMAND) run build
 
+dev: export ASTRO_TELEMETRY_DISABLED=1
 dev: install  ## Run dev server
 	$(COMMAND) run dev
 
